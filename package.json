@@ -1,0 +1,11 @@
+{
+  "name": "get-yt-info",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "João Víctor",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "youtube-dl": "^3.0.2"
+  }
+}
