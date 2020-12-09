@@ -3,6 +3,8 @@ const youtubedl = require('youtube-dl');
 
 const app = express();
 
+app.get('/', (req, res) => res.send('Visit https://github.com/joaovictorc/get-yt-info to learn how to use it.'));
+
 app.get('/youtube2mp4', (req, res) => {
   const { url } = req.query;
 

@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "João Víctor",
   "license": "MIT",
+  "scripts": {
+    "dev": "node src/index.js",
+    "build": "yarn build"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "youtube-dl": "^3.0.2"
