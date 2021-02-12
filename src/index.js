@@ -1,11 +1,15 @@
-const express = require('express');
-const youtubedl = require('youtube-dl');
+const express = require("express");
+const youtubedl = require("youtube-dl");
 
 const app = express();
 
-app.get('/', (req, res) => res.send('Visit https://github.com/joaovictorc/get-yt-info to learn how to use it.'));
+app.get("/", (req, res) =>
+  res.send(
+    "Visit https://github.com/joaovictorc/get-yt-info to learn how to use it."
+  )
+);
 
-app.get('/youtube2mp4', (req, res) => {
+app.get("/youtube2mp4", (req, res) => {
   const { url } = req.query;
 
   youtubedl.getInfo(url, (err, info) => {
@@ -23,6 +27,6 @@ app.get('/youtube2mp4', (req, res) => {
   });
 });
 
-app.listen(9000, () => {
-  console.log('Server listening on port 9000!');
+app.listen(5000, () => {
+  console.log("Server listening on port 5000!");
 });
