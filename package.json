@@ -5,13 +5,14 @@
   "author": "João Víctor",
   "license": "MIT",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "pm2-runtime start ecosystem.config.js --env production"
   },
   "engines": {
     "node": "14.x"
   },
   "dependencies": {
     "express": "^4.17.1",
+    "pm2": "^4.5.4",
     "youtube-dl": "^3.0.2"
   }
 }
